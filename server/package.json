@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "keywords": [],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "run-s clean:dist build:only",
+    "build:only": "tsc -p tsconfig.json",
+    "clean:dist": "rimraf dist",
+    "dev": "nodemon --exec 'vite-node src/index.ts'",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "fastify": "^4.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "eslint": "^8.41.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.22",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.0.4"
+  }
+}

@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d590c4ee-a13c-4f73-af0d-8b5f4f64c175"
+      }
+    },
+    "owner": "stormier"
   }
 }
